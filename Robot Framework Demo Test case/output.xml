@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230527 16:47:30.511" rpa="false" schemaversion="3">
+<suite id="s1" name="Tasks" source="d:\Gear Inc\Robot Framework Demo Test case\tasks.robot">
+<test id="s1-t1" name="Test Login" line="8">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>https://www.rpa-unlimited.com/youtube/robot-framework-tutorial/</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20230527 16:47:31.768" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230527 16:47:31.780" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230527 16:47:33.433" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20230527 16:47:33.433" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20230527 16:47:33.434" level="INFO">Opening url 'https://www.rpa-unlimited.com/youtube/robot-framework-tutorial/'</msg>
+<status status="PASS" starttime="20230527 16:47:31.766" endtime="20230527 16:47:36.940"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>id:email</arg>
+<arg>robot@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230527 16:47:36.944" level="INFO">Typing text 'robot@example.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20230527 16:47:36.941" endtime="20230527 16:47:37.132"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>id:password</arg>
+<arg>password</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230527 16:47:37.134" level="INFO">Typing text 'password' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230527 16:47:37.133" endtime="20230527 16:47:37.257"/>
+</kw>
+<kw name="Submit Form" library="RPA.Browser.Selenium">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20230527 16:47:37.259" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20230527 16:47:37.258" endtime="20230527 16:47:37.547"/>
+</kw>
+<kw name="Element Text Should Be" library="RPA.Browser.Selenium">
+<arg>id:main</arg>
+<arg>Welcome to the restricted area</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230527 16:47:37.552" level="INFO">Verifying element 'id:main' contains exact text 'Welcome to the restricted area'.</msg>
+<status status="PASS" starttime="20230527 16:47:37.549" endtime="20230527 16:47:37.787"/>
+</kw>
+<doc>Testing the login form with correct credentials</doc>
+<status status="PASS" starttime="20230527 16:47:31.764" endtime="20230527 16:47:37.787"/>
+</test>
+<test id="s1-t2" name="Test Login Failed" line="16">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>https://www.rpa-unlimited.com/youtube/robot-framework-tutorial/</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20230527 16:47:37.800" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230527 16:47:37.817" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230527 16:47:39.420" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20230527 16:47:39.420" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20230527 16:47:39.421" level="INFO">Opening url 'https://www.rpa-unlimited.com/youtube/robot-framework-tutorial/'</msg>
+<status status="PASS" starttime="20230527 16:47:37.796" endtime="20230527 16:47:42.588"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>id:email</arg>
+<arg>robot@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230527 16:47:42.589" level="INFO">Typing text 'robot@example.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20230527 16:47:42.588" endtime="20230527 16:47:42.808"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>id:password</arg>
+<arg>drowssap</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230527 16:47:42.813" level="INFO">Typing text 'drowssap' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230527 16:47:42.809" endtime="20230527 16:47:43.095"/>
+</kw>
+<kw name="Submit Form" library="RPA.Browser.Selenium">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20230527 16:47:43.099" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20230527 16:47:43.098" endtime="20230527 16:47:43.376"/>
+</kw>
+<kw name="Element Text Should Be" library="RPA.Browser.Selenium">
+<arg>id:main</arg>
+<arg>The credentials you provided are not correct</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230527 16:47:43.381" level="INFO">Verifying element 'id:main' contains exact text 'The credentials you provided are not correct'.</msg>
+<status status="PASS" starttime="20230527 16:47:43.378" endtime="20230527 16:47:43.642"/>
+</kw>
+<doc>Testing the login form with incorrect credentials</doc>
+<status status="PASS" starttime="20230527 16:47:37.790" endtime="20230527 16:47:43.644"/>
+</test>
+<doc>Template robot main suite.</doc>
+<status status="PASS" starttime="20230527 16:47:30.521" endtime="20230527 16:47:43.651"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
